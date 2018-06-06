@@ -1,6 +1,6 @@
 # orb
 
-A Screen shot from an iPhone showing Web page served up from the embedded HTTP server.
+A Screen shot from an iPhone showing the Web page served up from the embedded HTTP server.
 
 It's design to look like a remote control 
 
