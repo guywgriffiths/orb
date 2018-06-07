@@ -1,7 +1,19 @@
 # orb
 
-A Screen shot from an iPhone showing the Web page served up from the embedded HTTP server.
+Orb is a USB powered LED lamp with an embedded microcontroller that allows it to be controlled remotely over wifi via HTTP and MQTT. The controller is an Wemos D1 mini that utilises an ESP 8266. Additionally is has an RF 433Mhz reciever that can be dynamically configured to control the devices functions.
+
+The USB-A socket can be used to switch USB powered devices such as lamps and fans. It also has a piezo-electric buzzer.
+
+
+Here's the a picture of the first Orb. 
+
+<img src="https://user-images.githubusercontent.com/2019989/41097744-677b9d02-6a9c-11e8-8952-004872332f09.jpg" width=400>
+
+
+A Screen shot from an iPhone showing the Web page served up from the embedded HTML server.
 
 It's designed to look like an old style TV remote control 
 
 <img src="https://user-images.githubusercontent.com/2019989/41035960-b4d279c0-69d1-11e8-82b0-8630fc84b622.jpg" width=200>
+
+I'll post the mircocontroller C++ code once I've clean it up to removed obselete bits.
