@@ -19,5 +19,5 @@ It's designed to look like an old style TV remote control.
 I'll post the mircocontroller C++ code once I've cleaned it up to remove the obsolete bits.
 - [ ] Post source code
 - [ ] Bill of Materials
-- [ ] contruction notes and photographs
-- [ ] videos of operating lamp
+- [ ] circuit diagram , contruction notes and photographs
+- [ ] videos of a operating lamp
