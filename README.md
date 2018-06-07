@@ -20,4 +20,4 @@ I'll post the mircocontroller C++ code once I've cleaned it up to remove the obs
 - [ ] Post source code
 - [ ] Bill of Materials
 - [ ] circuit diagram , contruction notes and photographs
-- [ ] videos of a operating lamp
+- [ ] videos of an operating lamp
