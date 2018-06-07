@@ -10,7 +10,7 @@ Here's the a picture of the first Orb.
 <img src="https://user-images.githubusercontent.com/2019989/41097744-677b9d02-6a9c-11e8-8952-004872332f09.jpg" width=400>
 
 
-A Screen shot from an iPhone showing the Web page served up from the embedded HTML server.
+Below is screen shot taken from an iPhone showing the Web page served up from the embedded HTML server.
 
 It's designed to look like an old style TV remote control 
 
