@@ -33,7 +33,7 @@ URL | Paramters | Function
 /white |  | white
 /warm |  | warm white
 /black |  | black ( off )
-/colour| value=[r,R,g,G,b,B,w,W,z,Z] | r=red, g=green, b=blue , w=white , z=black
+/colour| value=[r,R,g,G,b,B,w,W,z,Z] | r=red, g=green, b=blue , w=white , z=black ( lc = half, uc = full)
 
 ### Animaton Patterns
 URL | Paramters | Function
@@ -46,7 +46,7 @@ URL | Paramters | Function
 /rainbow |  | rotate through hues
 /disco |  | random colours
 /sos |  | green SOS sequence
-/pattern | pattern | play sequence
+/pattern | pattern= | play sequence of colours ie. pattern=rGzWw
 
 
 ### Animaton Speed
