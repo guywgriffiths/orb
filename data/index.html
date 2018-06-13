@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="user-scalable=no, width=device-width">
+<meta name="viewport" content="initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<head>
+<style>
+
+
+@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+
+
+body {
+  font-family: "system";
+  background: #43474f;
+}
+
+.wrap {
+    text-align: center;
+}
+#status {
+    text-align: left;
+    color: white;
+    font-size: 2vh;
+    background: #263236;
+}
+button {
+    color: white;
+    padding: 1em 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2vh;
+    margin: 0.25em 0.25em;
+    -webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.5s;
+    cursor: pointer;
+    border-radius: 0.5em;
+    width: 6em;
+    outline:0;
+}
+button:active{
+   -webkit-transition-duration: 0.0s; /* Safari */
+    transition-duration: 0.0s
+    color: black;
+    background-color: #a8a8a8;
+}
+
+@media only screen and (min-device-width: 800px) {
+   button:hover{ border: 4px solid white; }
+}
+.grn {
+    background-color: #4CAF50;
+    border: 4px solid #4CAF50;
+}
+.blu {
+   background-color: #008CBA;
+   border: 4px solid #008CBA;
+}
+.red {
+   background-color: #f44336;
+   border: 4px solid #f44336;
+}
+.orange {
+   background-color: #F1AA40;
+   border: 4px solid #F1AA40;
+}
+.purp {
+   background-color: #873b79;
+   border: 4px solid #873b79;
+}
+
+</style>
+</head>
+<body>
+
+<div class="wrap">
+<div id="status">&nbsp</div>
+
+<button onclick="sendcmd('/flash')" class="orange">FLASH</button>
+<button onclick="sendcmd('/disco')" class="orange">DISCO</button>
+<button onclick="sendcmd('/rainbow')" class="orange">RAINBOW</button>
+<br>
+
+<button onclick="sendcmd('/ramp')" class="orange">RAMP</button>
+<button onclick="sendcmd('/melody')" class="orange">SONG</button>
+<button onclick="sendcmd('/sos')" class="orange">SOS</button>
+<br>
+
+<button onclick="sendcmd('/colour?value=R')" class="red">RED</button>
+<button onclick="sendcmd('/colour?value=G')" class="grn">GREEN</button>
+<button onclick="sendcmd('/colour?value=B')" class="blu">BLUE</button>
+<br>
+
+<button onclick="sendcmd('/colour?value=Z')" class="purp">BLACK</button>
+<button onclick="sendcmd('/colour?value=W')" class="purp">WHITE</button>
+<br>
+
+<button onclick="sendcmd('/arrow?dir=u')" class="purp">UP</button>
+<br>
+<button onclick="sendcmd('/arrow?dir=l')" class="purp">LEFT</button>
+<button onclick="sendcmd('/ok')" class="purp">OK</button>
+<button onclick="sendcmd('/arrow?dir=r')" class="purp">RIGHT</button>
+<br>
+<button onclick="sendcmd('/arrow?dir=d')" class="purp">DOWN</button>
+<br>
+
+<button onclick="sendcmd('/slower')" class="grn">SPEED-</button>
+<button onclick="sendcmd('/faster')" class="grn">SPEED+</button>
+<button onclick="sendcmd('/reset')" class="red">RESET</button>
+<br>
+
+<button onclick="sendcmd('/slow')" class="blu">SLOW</button>
+<button onclick="sendcmd('/normal')" class="blu">NORMAL</button>
+<button onclick="sendcmd('/fast')" class="blu">FAST</button>
+<br>
+<button onclick="sendcmd('/usbon')" class="orange">ON</button>
+<button onclick="sendcmd('/usboff')" class="orange">OFF</button>
+
+
+</div>
+
+<script>
+var statusMessage = document.getElementById("status");
+
+
+
+function sendcmd(cmdURL) {
+
+  var xhr = new XMLHttpRequest();
+
+  var reqLoadedListener = function (event) {
+     statusMessage.innerText = xhr.response.message;
+     console.log(xhr.response);
+  };
+
+  xhr.addEventListener("load", reqLoadedListener);
+
+  xhr.open("GET", cmdURL, true);
+  xhr.responseType = 'json';
+  xhr.setRequestHeader('Content-type', 'application/json');
+  xhr.send();
+}
+</script>
+</body>
+</html>
