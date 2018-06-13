@@ -27,12 +27,7 @@ I'll post the mircocontroller C++ code once I've cleaned it up to remove the obs
 ### Lamp Colour
 URL | Paramters | Function
 ------------ | ------------- | -------------
-/red |  | red
-/green |  | green
-/blue | | blue
-/white |  | white
-/warm |  | warm white
-/black |  | black ( off )
+
 /colour| value=[r,R,g,G,b,B,w,W,z,Z] | r=red, g=green, b=blue , w=white , z=black ( lc = half, uc = full)
 
 ### Animaton Patterns
