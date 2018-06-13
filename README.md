@@ -30,7 +30,7 @@ URL | Paramters | Function
 
 /colour| value=[r,R,g,G,b,B,w,W,z,Z] | r=red, g=green, b=blue , w=white , z=black ( lc = half, uc = full)
 
-### Animaton Patterns
+### Sequencer Patterns
 URL | Paramters | Function
 ------------ | ------------- | -------------
 /flash |  | flash
@@ -44,17 +44,17 @@ URL | Paramters | Function
 /pattern | pattern= | play sequence of colours ie. pattern=rGzWw
 
 
-### Animaton Speed
+### Sequencer Speed
 URL | Paramters | Function
 ------------ | ------------- | -------------
-/start |  | start animation cycle
-/stop |  | stop animation cycle
-/speed | value= | set the animation cycle step time in Milliseconds
-/slow |  | animation step size = 200ms
-/normal |  | animation step size = 100ms
-/fast |  | animation step size = 50ms
-/slower |  | slow down animation
-/faster |  | speed up animaton
+/start |  | start sequencer cycle
+/stop |  | stop sequencer 
+/speed | value= | set the sequencer step time in Milliseconds
+/slow |  | sequencer step size = 200ms
+/normal |  | sequencer step size = 100ms
+/fast |  | sequencer step size = 50ms
+/slower |  | slow down sequencer
+/faster |  | speed up sequencer
 
 ### Buzzer and USB-A Socket
 URL | Paramters | Function
@@ -68,7 +68,7 @@ URL | Paramters | Function
 ### Configurations and Modes
 URL | Paramters | Function
 ------------ | ------------- | -------------
-/rfmode | mode=[0,1,2,3] | set the behaviour of the lamp when Channel 3 of the RF433 receiver goes low </br> 0 = toggle USB-A  ( default ), 1 = Animation Start/Stop , 2 = Lamp on/off , 3 = Play Melody
+/rfmode | mode=[0,1,2,3] | set the behaviour of the lamp when Channel 3 of the RF433 receiver goes low </br> 0 = toggle USB-A  ( default ), 1 = Sequencer Start/Stop , 2 = Lamp on/off , 3 = Play Melody
 /mqtt | mode=[1] | turn the MQTT mode on or off
 /ap | mode=[u] | turn Access Point ( AP) mode on or off
 /status |  | return state of device in JSON format
