@@ -16,8 +16,8 @@ It's designed to look like an old style TV remote control.
 
 <img src="https://user-images.githubusercontent.com/2019989/41035960-b4d279c0-69d1-11e8-82b0-8630fc84b622.jpg" width=200>
 
-I'll post the mircocontroller C++ code once I've cleaned it up to remove the obsolete bits.
-- [ ] Post source code
+I'll post the microcontroller C++ code once I've cleaned it up to remove the obsolete bits.
+- [x] Post source code
 - [ ] Bill of Materials
 - [ ] circuit diagram , contruction notes and photographs
 - [ ] videos of an operating lamp
@@ -27,7 +27,6 @@ I'll post the mircocontroller C++ code once I've cleaned it up to remove the obs
 ### Lamp Colour
 URL | Paramters | Function
 ------------ | ------------- | -------------
-
 /colour| value=[r,R,g,G,b,B,w,W,z,Z] | r=red, g=green, b=blue , w=white , z=black ( lc = half, uc = full)
 
 ### Sequencer Patterns
