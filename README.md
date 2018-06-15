@@ -5,7 +5,7 @@ Orb is a USB powered LED lamp with an embedded microcontroller that allows it to
 The USB-A socket can be used to switch USB powered devices on and off such as lamps and fans. It also has a piezo-electric buzzer. Additionally it has an RF 433Mhz reciever that can be dynamically configured to control the devices functions using many EV1527 4CH transmitters.
 
 
-Here's the a picture of the first Orb. 
+Here's the a picture of the first Orb. See the wiki pages for more pictures.
 
 <img src="https://user-images.githubusercontent.com/2019989/41097744-677b9d02-6a9c-11e8-8952-004872332f09.jpg" width=400>
 
@@ -30,12 +30,6 @@ Selected the SSID or type it in and add the password.
 You can also configure the MQTT server details here if required.
 Press save and the device will switch off the AP Wifi and connect to the supplied wifi network.
 
-
-## TODO:
-- [x] Post source code
-- [x] Bill of Materials ( on the wiki )
-- [ ] circuit diagram , contruction notes and photographs
-- [ ] videos of an operating lamp
 
 ## HTTP endpoints
 
@@ -113,3 +107,9 @@ b | blue
 B | blue 
 w | white 
 W | white 
+
+## Documentation TODOs:
+- [x] Post source code
+- [x] Bill of Materials ( on the wiki )
+- [ ] circuit diagram , contruction notes and photographs
+- [ ] videos of an operating lamp
