@@ -28,7 +28,7 @@ Select "configure Wifi" and a screen similiar the following will appear:
 
 Selected the SSID or type it in and add the password.
 You can also configure the MQTT server details here if required.
-press save the device will switch off the AP Wifi and connect to the wifi network.
+Press save and the device will switch off the AP Wifi and connect to the supplied wifi network.
 
 
 ## TODO:
