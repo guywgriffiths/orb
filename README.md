@@ -22,9 +22,13 @@ The system will try to reconnect to the last wifi network it successfull connect
 
 <img src="https://user-images.githubusercontent.com/2019989/41467247-12a55b4e-70e9-11e8-91ba-a7382eb94dc4.PNG" width=200>
 
-Select "configure Wifi" and the follow screen will appear:
+Select "configure Wifi" and a screen similiar the following will appear:
 
+<img src="https://user-images.githubusercontent.com/2019989/41467740-f99be756-70ea-11e8-916a-b99053641e74.png" width=200>
 
+Selected the SSID or type it in and add the password.
+You can also configure the MQTT server details here if required.
+press save the device will switch off the AP Wifi and connect to the wifi network.
 
 
 ## TODO:
