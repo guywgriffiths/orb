@@ -16,7 +16,18 @@ It's designed to look like an old style TV remote control.
 
 <img src="https://user-images.githubusercontent.com/2019989/41035960-b4d279c0-69d1-11e8-82b0-8630fc84b622.jpg" width=200>
 
-TODO:
+## Wifi Setup
+
+The system will try to reconnect to the last wifi network it successfull connected to if it fails then it starts a Access Point Wifi SSID called "Led Orb Config". Use a phone to connect to this wifi network and the follow screen wil load.
+
+<img src="https://user-images.githubusercontent.com/2019989/41467247-12a55b4e-70e9-11e8-91ba-a7382eb94dc4.PNG" width=200>
+
+Select "configure Wifi" and the follow screen will appear:
+
+
+
+
+## TODO:
 - [x] Post source code
 - [x] Bill of Materials ( on the wiki )
 - [ ] circuit diagram , contruction notes and photographs
