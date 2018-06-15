@@ -16,9 +16,9 @@ It's designed to look like an old style TV remote control.
 
 <img src="https://user-images.githubusercontent.com/2019989/41035960-b4d279c0-69d1-11e8-82b0-8630fc84b622.jpg" width=200>
 
-I'll post the microcontroller C++ code once I've cleaned it up to remove the obsolete bits.
+TODO:
 - [x] Post source code
-- [ ] Bill of Materials
+- [x] Bill of Materials ( on the wiki )
 - [ ] circuit diagram , contruction notes and photographs
 - [ ] videos of an operating lamp
 
@@ -73,3 +73,28 @@ URL | Paramters | Function
 /status |  | return state of device in JSON format
 /reset | | reset Lamp state
 /wfifwipe | | wipe wifi credetials and reset device
+
+## MQTT functions
+
+If there is an MQTT server name configured then the system will try to establish a connection every 10 seconds.
+
+Once connected it will listen on the topic "orbs/deviceCommand" for commands ( TODO: add hostname to topic )
+The device will also post JSON status messages to the topic "orbs/deviceStatus" on every HTTP request 
+
+### MQTT commands
+
+command | function
+------------ | ------------- 
+3 | toggle RF433 SW3 function 
+a | toggle sequencer start/stop
+s | fixed 
+f | flash
+u | rainbox sequence
+r | red 
+R | red 
+g | green 
+G | green  
+b | blue 
+B | blue 
+w | white 
+W | white 
