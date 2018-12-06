@@ -18,7 +18,7 @@ It's designed to look like an old style TV remote control.
 
 ## Wifi Setup
 
-The system will try to reconnect to the last wifi network it successfull connected to if it fails then it starts a Access Point Wifi SSID called "Led Orb Config". Use a phone to connect to this wifi network and the follow screen wil load.
+The system will try to reconnect to the last wifi network it successfully connected to, if it fails then it starts an Access Point Wifi on SSID "Led Orb Config". Use a phone to connect to this wifi network and the follow screen will load.
 
 <img src="https://user-images.githubusercontent.com/2019989/41467247-12a55b4e-70e9-11e8-91ba-a7382eb94dc4.PNG" width=200>
 
@@ -26,7 +26,7 @@ Select "configure Wifi" and a screen similiar the following will appear:
 
 <img src="https://user-images.githubusercontent.com/2019989/41467740-f99be756-70ea-11e8-916a-b99053641e74.png" width=200>
 
-Selected the SSID or type it in and add the password.
+Select the SSID or type it in and add the password.
 You can also configure the MQTT server details here if required.
 Press save and the device will switch off the AP Wifi and connect to the supplied wifi network.
 
