@@ -1,8 +1,11 @@
 # Orb
 
-Orb is a USB powered LED lamp with an embedded microcontroller that allows it to be controlled remotely over wifi using HTTP and MQTT. The controller is a Wemos D1 mini that utilises an ESP 8266. 
+Orb is a USB powered LED lamp containing an embedded microcontroller with WiFi running a HTTP server. The server provides simple HMTL based configuration and UI pages suitable for mobile devices. 
 
-The USB-A socket can be used to switch USB powered devices on and off such as lamps and fans. It also has a piezo-electric buzzer. Additionally it has an RF 433Mhz reciever that can be dynamically configured to control the devices functions using many EV1527 4CH transmitters.
+The lamp can also be controlled remotely using a set of HTTP endpoints and MQTT commands. 
+ 
+
+A USB-A socket on the side of case can be used to switch USB powered devices on and off such as LED fairy lights and low powered fans. It also contains a piezo-electric buzzer. Additionally it has an RF 433Mhz reciever that can be dynamically configured to control the devices functions using many EV1527 4CH based transmitters.
 
 
 Here's the a picture of the first Orb. See the wiki pages for more pictures.
@@ -10,7 +13,7 @@ Here's the a picture of the first Orb. See the wiki pages for more pictures.
 <img src="https://user-images.githubusercontent.com/2019989/41097744-677b9d02-6a9c-11e8-8952-004872332f09.jpg" width=400>
 
 
-Below is a screen shot taken from an iPhone showing the Web page served up from the embedded HTML server.
+Below is a screen shot taken from an iPhone showing the simple UI served up from the embedded HTML server.
 
 It's designed to look like an old style TV remote control.
 
@@ -18,7 +21,7 @@ It's designed to look like an old style TV remote control.
 
 ## Wifi Setup
 
-The system will try to reconnect to the last wifi network it successfully connected to, if it fails then it starts an Access Point Wifi on SSID "Led Orb Config". Use a phone to connect to this wifi network and the follow screen will load.
+Upon reset, the system will try to reconnect to the last WiFi network it successfully connected to, if that fails then it starts an **Access Point** WiFi on SSID "**Led Orb Config**". Use a phone to connect to this WiFi network and the following screen will load.
 
 <img src="https://user-images.githubusercontent.com/2019989/41467247-12a55b4e-70e9-11e8-91ba-a7382eb94dc4.PNG" width=200>
 
@@ -28,7 +31,7 @@ Select "configure Wifi" and a screen similiar the following will appear:
 
 Select the SSID or type it in and add the password.
 You can also configure the MQTT server details here if required.
-Press save and the device will switch off the AP Wifi and connect to the supplied wifi network.
+Press save and the device will switch off the AP WiFi and connect to the supplied WiFi network.
 
 
 ## HTTP endpoints
@@ -98,7 +101,7 @@ command | function
 a | toggle sequencer start/stop
 s | fixed 
 f | flash
-u | rainbox sequence
+u | rainbow sequence
 r | red 
 R | red 
 g | green 
